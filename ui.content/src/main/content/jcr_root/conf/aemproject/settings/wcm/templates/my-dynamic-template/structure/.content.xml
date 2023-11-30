@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2023-11-22T12:03:05.276+02:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/aemproject/settings/wcm/templates/my-dynamic-template"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="wcm/foundation/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aemproject/components/container"
+            layout="responsiveGrid">
+            <header
+                jcr:created="{Date}2023-11-21T20:41:07.319+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-11-21T20:41:15.130+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemproject/components/content/header"/>
+            <mycomponent
+                jcr:created="{Date}2023-11-22T10:17:24.517+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-11-22T10:17:38.123+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemproject/components/content/mycomponent"
+                title="Good kabisa">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="1"
+                        width="10"/>
+                </cq:responsive>
+            </mycomponent>
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemproject/components/container"
+                editable="{Boolean}true"
+                layout="responsiveGrid"
+                style="padding: 20px;"/>
+            <footer
+                jcr:created="{Date}2023-11-21T20:41:07.319+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-11-21T20:41:15.130+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemproject/components/content/footer"/>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Long}768"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>${pageProperties.jcr:title}</title>
+  </head>
+  <body>
+    <sly
+      data-sly-include="/libs/wcm/core/components/init/init.jsp"
+      data-sly-unwrap
+    />
+    <div
+      data-sly-resource="${'header' @resourceType='aemproject/components/content/header'}"
+      data-sly-unwrap
+    ></div>
+    <h1>This is the content of the page</h1>
+    <div
+      data-sly-resource="${'mycomponent' @resourceType='aemproject/components/content/mycomponent'}"
+    ></div>
+    <br />
+    <div
+      data-sly-resource="${'myparsys' @resourceType='wcm/foundation/components/parsys'}"
+    ></div>
+    <br />
+    <div
+      data-sly-use.model="com.aimelive.aemproject.core.models.MyComponentModel"
+      data-sly-test="${model.myComponentText}"
+    >
+      <p>Model message:</p>
+      <pre>${model.myComponentText}</pre>
+    </div>
+    <div
+      data-sly-resource="${'footer' @resourceType='aemproject/components/content/footer'}"
+      data-sly-unwrap
+    ></div>
+  </body>
+</html>

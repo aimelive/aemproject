@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2023-11-22T12:01:38.531+02:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/aemproject/settings/wcm/templates/another-template-2"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="aemproject/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aemproject/components/container"
+            layout="responsiveGrid">
+            <navigation
+                jcr:created="{Date}2023-11-22T11:01:42.577+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-11-22T11:02:27.251+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemproject/components/navigation"
+                accessibilityLabel="My Website"
+                collectAllPages="true"
+                disableShadowing="false"
+                navigationRoot="/content/aemproject/us"
+                structureStart="1">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="1"
+                        width="10"/>
+                </cq:responsive>
+            </navigation>
+            <title
+                jcr:created="{Date}2023-11-22T11:48:20.852+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-11-22T11:48:38.188+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Welcome to my web page - edited from vs code"
+                sling:resourceType="aemproject/components/title"
+                linkTarget="_self"
+                type="h3"
+                editable="{Boolean}false">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="1"
+                        width="10"/>
+                </cq:responsive>
+            </title>
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemproject/components/container"
+                editable="{Boolean}true"
+                layout="responsiveGrid">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="1"
+                        width="10"/>
+                </cq:responsive>
+            </container>
+            <text
+                jcr:created="{Date}2023-11-22T11:54:53.318+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-11-22T11:55:21.621+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemproject/components/text"
+                text="&lt;p>Alright received 2023;&lt;/p>&#xd;&#xa;"
+                textIsRich="true">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="1"
+                        width="11"/>
+                </cq:responsive>
+            </text>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Long}768"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

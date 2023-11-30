@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2023-11-21T17:22:33.701+02:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/aemproject/settings/wcm/templates/experience-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Experience Template"
+        sling:resourceType="weretail/components/structure/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:created="{Date}2016-01-13T15:58:09.854+01:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="2016-01-13T15:58:50.877+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <content_fragment
+                    jcr:lastModified="{Date}2023-11-21T17:22:33.698+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="weretail/components/content/contentfragment"
+                    displayMode="multi"
+                    elementNames="main"
+                    fragmentPath="/content/dam/we-retail/en/experiences/48-hours-of-wilderness/my-journey-experience-was-very-good-and-cool-"
+                    paragraphScope="all"
+                    variationName="master"/>
+            </responsivegrid>
+            <hero_image
+                jcr:lastModified="{Date}2023-11-21T17:14:52.755+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="weretail/components/content/heroimage"
+                fileName="architecture-1868667_1280.jpg"
+                useFullWidth="true">
+                <file/>
+            </hero_image>
+        </root>
+    </jcr:content>
+</jcr:root>
